@@ -1,25 +1,24 @@
 Cursewords = {
 	
-	" paska",
-	" paskoja",
-	" vitun",
-	" saatana",
-	" vittu",
-	" vituiks",
-	" vitun",
-	" vituttaa",
-	" homo",
-	" hintti",
-	" hinttari",
-	" runkkari",
-	" autisti",
-	" perkele"
+	"paska",
+	"paskoja",
+	"vitun",
+	"saatana",
+	"vittu",
+	"vituiks",
+	"vituttaa",
+	"homo",
+	"hintti",
+	"hinttari",
+	"runkkari",
+	"autisti",
+	"perkele"
 	
 }
 
 function hasCurseWords(str)
 	for i = 1, #Cursewords, 1 do
-		if string.match(str, Cursewords[i]) then
+		if string.match(str, " " .. Cursewords[i]) then
 			return true
 		end
 	end
